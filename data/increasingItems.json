@@ -1,0 +1,122 @@
+[
+    {
+        "index": "017",
+        "name": "Potion",
+        "description": "A spray-type medicine for\nwounds. It restores the HP of one\nPokémon by just 20 points.",
+        "category": "MEDICINES",
+        "incrementAmount": "20",
+        "increaseType": "PS"
+    },
+    {
+        "index": "024",
+        "name": "Max Potion",
+        "description": "A spray-type medicine for\nwounds. It completely restores the HP\nof a single Pokémon.",
+        "category": "MEDICINES",
+        "incrementAmount": "999",
+        "increaseType": "PS"
+    },
+    {
+        "index": "025",
+        "name": "Hyper Potion",
+        "description": "A spray-type medicine for\nwounds. It restores the HP of\none Pokémon by 200 points.",
+        "category": "MEDICINES",
+        "incrementAmount": "200",
+        "increaseType": "PS"
+    },
+    {
+        "index": "026",
+        "name": "Super Potion",
+        "description": "A spray-type medicine for\nwounds. It restores the HP of\none Pokémon by 50 points.",
+        "category": "MEDICINES",
+        "incrementAmount": "50",
+        "increaseType": "PS"
+    },
+    {
+        "index": "028",
+        "name": "Revive",
+        "description": "A medicine that revives a\nfainted Pokémon. It restores half the\nPokémon's maximum HP.",
+        "category": "MEDICINES",
+        "incrementAmount": "HALF",
+        "increaseType": "PS"
+    },
+    {
+        "index": "029",
+        "name": "Max Revive",
+        "description": "A medicine that revives a\nfainted Pokémon. It fully restores the\nPokémon's HP.",
+        "category": "MEDICINES",
+        "incrementAmount": "FULL",
+        "increaseType": "PS"
+    },
+    {
+        "index": "030",
+        "name": "Fresh Water",
+        "description": "Water with a high mineral\ncontent. It restores the HP of\none Pokémon by 50 points.",
+        "category": "MEDICINES",
+        "incrementAmount": "50",
+        "increaseType": "PS"
+    },
+    {
+        "index": "031",
+        "name": "Soda Pop",
+        "description": "A fizzy soda drink. It\nrestores the HP of one Pokémon\nby 60 points.",
+        "category": "MEDICINES",
+        "incrementAmount": "60",
+        "increaseType": "PS"
+    },
+    {
+        "index": "032",
+        "name": "Lemonade",
+        "description": "A very sweet drink. It\nrestores the HP of one Pokémon\nby 80 points.",
+        "category": "MEDICINES",
+        "incrementAmount": "80",
+        "increaseType": "PS"
+    },
+    {
+        "index": "033",
+        "name": "Moomoo Milk",
+        "description": "Milk with a very high nutrition\ncontent. It restores the HP of one\nPokémon by 100 points.",
+        "category": "MEDICINES",
+        "incrementAmount": "100",
+        "increaseType": "PS"
+    },
+    {
+        "index": "038",
+        "name": "Ether",
+        "description": "It restores the PP of a Pokémon's\nselected move by a maximum\nof 10 points.",
+        "category": "MEDICINES",
+        "incrementAmount": "10",
+        "increaseType": "PP"
+    },
+    {
+        "index": "039",
+        "name": "Max Ether",
+        "description": "It fully restores the PP of a\nsingle selected move that has been\nlearned by the target Pokémon.",
+        "category": "MEDICINES",
+        "incrementAmount": "999",
+        "increaseType": "PP"
+    },
+    {
+        "index": "154",
+        "name": "Leppa Berry",
+        "description": "If held by a Pokémon, it\nrestores a move's PP by 10.",
+        "category": "BERRIES",
+        "incrementAmount": "10",
+        "increaseType": "PP"
+    },
+    {
+        "index": "155",
+        "name": "Oran Berry",
+        "description": "If held by a Pokémon, it\nheals the user by just 10 HP.",
+        "category": "BERRIES",
+        "incrementAmount": "10",
+        "increaseType": "PS"
+    },
+    {
+        "index": "158",
+        "name": "Sitrus Berry",
+        "description": "If held by a Pokémon, it\nheals the user's HP a little.",
+        "category": "BERRIES",
+        "incrementAmount": "30",
+        "increaseType": "PS"
+    }
+]

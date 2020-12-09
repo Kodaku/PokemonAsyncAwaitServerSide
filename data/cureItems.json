@@ -1,0 +1,86 @@
+[
+    {
+        "index": "018",
+        "name": "Antidote",
+        "description":"A spray-type medicine. It lifts the effect of poison from one Pokémon.",
+        "category": "MEDICINES",
+        "stateCured": "POISONED"
+    },
+    {
+        "index": "019",
+        "name": "Burn Heal",
+        "description": "A spray-type medicine. It heals a single Pokémon that is suffering from a burn.",
+        "category": "MEDICINES",
+        "stateCured": "BURNED"
+    },
+    {
+        "index": "020",
+        "name": "Ice Heal",
+        "description": "A spray-type medicine. It defrosts a Pokémon that has been frozen solid.",
+        "category": "MEDICINES",
+        "stateCured": "FREEZED"
+    },
+    {
+        "index": "021",
+        "name": "Awakening",
+        "description": "A spray-type medicine. It awakens a Pokémon from the clutches of sleep.",
+        "category": "MEDICINES",
+        "stateCured": "ASLEEP"
+    },
+    {
+        "index": "022",
+        "name": "Paralyz Heal",
+        "description": "A spray-type medicine. It eliminates paralysis from a single Pokémon.",
+        "category": "MEDICINES",
+        "stateCured": "PARALYZED"
+    },
+    {
+        "index": "027",
+        "name": "Full Heal",
+        "description": "A spray-type medicine. It heals all the status problems of a single Pokémon.",
+        "category": "MEDICINES",
+        "stateCured": "ALL"
+    },
+    {
+        "index": "149",
+        "name": "Cheri Berry",
+        "description": "If held by a Pokémon, it recovers from paralysis.",
+        "category": "BERRIES",
+        "stateCured": "PARALYZED"
+    },
+    {
+        "index": "150",
+        "name": "Chesto Berry",
+        "description": "If held by a Pokémon, it recovers from sleep.",
+        "category": "BERRIES",
+        "stateCured": "ASLEEP"
+    },
+    {
+        "index": "151",
+        "name": "Pecha Berry",
+        "description": "If held by a Pokémon, it recovers from poison.",
+        "category": "BERRIES",
+        "stateCured": "POISONED"
+    },
+    {
+        "index": "152",
+        "name": "Rawst Berry",
+        "description": "If held by a Pokémon, it recovers from a burn.",
+        "category": "BERRIES",
+        "stateCured": "BURNED"
+    },
+    {
+        "index": "153",
+        "name": "Aspear Berry",
+        "description": "If held by a Pokémon, it defrosts it.",
+        "category": "BERRIES",
+        "stateCured": "FREEZED"
+    },
+    {
+        "index": "157",
+        "name": "Lum Berry",
+        "description": "If held by a Pokémon, it recovers from any status problem.",
+        "category": "BERRIES",
+        "stateCured": "ALL"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "index": "001",
+        "name": "Master Ball",
+        "description": "The best Ball with\nthe ultimate level\n of performance. It will catch any\nwild Pokémon without fail.",
+        "category": "ITEMS",
+        "catchProbability": "0"
+    },
+    {
+        "index": "002",
+        "name": "Ultra Ball",
+        "description": "An ultra-performance Ball\nthat provides a higher Pokémon catch\nrate than a Great Ball.",
+        "category": "ITEMS",
+        "catchProbability": "150"
+    },
+    {
+        "index": "003",
+        "name": "Great Ball",
+        "description": "A good, high-performance\nBall that provides a higher Pokémon\ncatch rate than a standard Poké Ball.",
+        "category": "ITEMS",
+        "catchProbability": "200"
+    },
+    {
+        "index": "004",
+        "name": "Poké Ball",
+        "description": "A device for catching wild\nPokémon. It is thrown like a ball at\nthe target. It is designed as a capsule system.",
+        "category": "ITEMS",
+        "catchProbability": "255"
+    }
+]

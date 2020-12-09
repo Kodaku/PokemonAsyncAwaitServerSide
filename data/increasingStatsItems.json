@@ -1,0 +1,42 @@
+[
+    {
+        "index": "057",
+        "name": "X Attack",
+        "description": "An item that raises the\nAttack stat of a Pokémon in battle.\nIt wears off if the Pokémon is withdrawn.",
+        "category": "ITEMS",
+        "incrementAmount": "1",
+        "statName": "ATTACK"
+    },
+    {
+        "index": "058",
+        "name": "X Defense",
+        "description": "An item that raises the\nDefense stat of a Pokémon in battle.\nIt wears off if the Pokémon is withdrawn.",
+        "category": "ITEMS",
+        "incrementAmount": "1",
+        "statName": "DEFENSE"
+    },
+    {
+        "index": "059",
+        "name": "X Speed",
+        "description": "An item that raises the\nSpeed stat of a Pokémon in battle.\nIt wears off if the Pokémon is withdrawn.",
+        "category": "ITEMS",
+        "incrementAmount": "1",
+        "statName": "SPEED"
+    },
+    {
+        "index": "061",
+        "name": "X Special",
+        "description": "An item that raises the\nSp. Atk stat of a Pokémon in battle.\nIt wears off if the Pokémon is withdrawn.",
+        "category": "ITEMS",
+        "incrementAmount": "1",
+        "statName": "SPECIAL ATTACK"
+    },
+    {
+        "index": "062",
+        "name": "X Sp. Defense",
+        "description": "An item that raises\nthe Sp. Def stat of a Pokémon in battle.\nIt wears off if the Pokémon is withdrawn.",
+        "category": "ITEMS",
+        "incrementAmount": "1",
+        "statName": "SPECIAL DEFENSE"
+    }
+]
