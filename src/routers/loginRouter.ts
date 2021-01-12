@@ -1,5 +1,4 @@
-import { Router, Request, Response } from 'express';
-import { spriteNames } from '../constants/constants';
+import { Router } from 'express';
 import { checkName, getID } from '../controllers/loginController';
 
 const loginRouter = Router();

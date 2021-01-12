@@ -12,6 +12,7 @@ import { pokeBallRouter } from './routers/pokeBallRouter';
 import { increasingStatsRouter } from './routers/increasingStatsItemsRouter';
 import { screenRouter } from './routers/screenRouter';
 import { upperLowerRouter } from './routers/upperLower/upperLowerRouter';
+import { battleRouter } from './routers/battleRouter';
 
 dotenv.config({ path: './config.env' });
 
@@ -63,6 +64,7 @@ function launchApp() {
   app.use(increasingStatsRouter);
   app.use(screenRouter);
   app.use(upperLowerRouter);
+  app.use(battleRouter);
 
   app.listen(3000, () => {
     console.log('Server listening on port 3000');

@@ -3,10 +3,14 @@ import {
   createUser,
   getPlayerInfo,
   getPlayerItems,
+  getPlayerPokemonIndex,
   getPlayerPokemons,
   getTotalPlayers,
   increaseItemQuantity,
+  messageFromUpper,
+  notifyLowerMenu,
   postPlayerInfo,
+  postPlayerPokemonIndex,
   reduceItemQuantity,
   switchPokemonIndex,
   waitPlayers,
@@ -48,5 +52,14 @@ playersRouter
   .route(`/players/user/move/:id`)
   .get(getPlayerInfo)
   .put(postPlayerInfo);
+
+playersRouter.route('/players/notify-empty/:id/:message').get(messageFromUpper);
+
+playersRouter.route('/players/notify/delayed/:id').get(notifyLowerMenu);
+
+playersRouter
+  .route('/battle/pokemon-index/:pokemonindex/:id')
+  .post(postPlayerPokemonIndex);
+playersRouter.route('/battle/pokemon-index/:id').get(getPlayerPokemonIndex);
 
 export { playersRouter };

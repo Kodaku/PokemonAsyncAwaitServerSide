@@ -36,6 +36,9 @@ export const postUserOnCouple = (req: Request, res: Response) => {
   const user: User = req.body.user as User;
   const id: number = parseInt(req.params.id);
   users[id] = user;
+  res.status(200).json({
+    status: 'success',
+  });
 };
 
 export const getCoupleUser = (req: Request, res: Response) => {

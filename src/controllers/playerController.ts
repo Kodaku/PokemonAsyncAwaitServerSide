@@ -1,3 +1,4 @@
+import { parse } from 'dotenv/types';
 import { Request, Response } from 'express';
 import {
   anims,
@@ -13,6 +14,11 @@ import { Item, TeamMember, User } from '../types/myTypes';
 
 let users: User[] = [];
 let completed: boolean = false;
+let notified: boolean[] = [false, false];
+let messagesFromLower: string[] = ['', ''];
+let fakes: number[] = [0, 0];
+let maxFakes: number[] = [2, 2];
+let pokemonIndexes: number[] = [0, 0];
 
 export const getTotalPlayers = (req: Request, res: Response) => {
   res.status(200).json({
@@ -25,19 +31,14 @@ export const createUser = (req: Request, res: Response) => {
   const userName = req.params.name;
   //assign pokemons
   const pokemons: TeamMember[] = assignPokemons();
-  // console.log(pokemons[id]);
   //assign poke balls
   const pokeBalls: Item[] = assignPokeBalls();
-  // console.log(pokeBalls[id]);
   //assign increase stats
   const increaseStatsItems: Item[] = assignIncreaseStats();
-  // console.log(increaseStatsItems[id]);
   //assign increase health
   const increaseItems: Item[] = assignHealths();
-  // console.log(increaseItems[id]);
   //assign cures
   const cureItems: Item[] = assignCures();
-  // console.log(cureItems[id]);
   const user: User = {
     userName: userName,
     userID: id,
@@ -54,7 +55,6 @@ export const createUser = (req: Request, res: Response) => {
     cures: cureItems,
   };
   users[id] = user;
-  console.log(users[id].increaseHealth);
   res.status(200).json({
     message: 'true',
     user: user,
@@ -175,6 +175,51 @@ export const waitPlayers = async function (req: Request, res: Response) {
   }
 };
 
+export const messageFromUpper = (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  messagesFromLower[id] = req.params.message;
+  // maxFakes[id] = 40; //wait 20 seconds the opponent's reply
+  console.log('From Game: ', id, messagesFromLower[id]);
+  res.status(200).json({
+    status: 'success',
+    data: messagesFromLower[id],
+  });
+};
+
+export const notifyLowerMenu = async function (req: Request, res: Response) {
+  const id = parseInt(req.params.id);
+  console.log('Got /events from EmptyMenu');
+  res.set({
+    'Cache-Control': 'no-cache',
+    'Content-Type': 'text/event-stream',
+    Connection: 'keep-alive',
+  });
+  res.flushHeaders();
+
+  // Tell the client to retry every 10 seconds if connectivity is lost
+  res.write('retry: 1000\n\n');
+
+  while (!notified[id]) {
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    fakes[id]++;
+    console.log(id);
+    if (messagesFromLower[id] !== '') {
+      console.log(id);
+      notified[id] = true;
+      console.log(messagesFromLower);
+      console.log('From Game Delayed: ', messagesFromLower[id]);
+      res.write(`data: ${'SWITCH'}\n\n`);
+    } else if (fakes[id] > maxFakes[id]) {
+      notified[id] = true;
+      console.log('Sent fake to Empty Menu');
+      res.write(`data: ${'FAKE'}\n\n`);
+    }
+  }
+  notified[id] = false;
+  messagesFromLower[id] = '';
+  fakes[id] = 0;
+};
+
 function allUsersDefined() {
   for (let i = 0; i < users.length; i++) {
     if (!users[i]) {
@@ -202,7 +247,6 @@ export const getPlayerItems = (req: Request, res: Response) => {
 };
 
 export const reduceItemQuantity = (req: Request, res: Response) => {
-  console.log(req.params);
   const id = parseInt(req.params.id);
   let itemIndex = req.params.itemindex;
   if (itemIndex.length === 1) {
@@ -210,7 +254,6 @@ export const reduceItemQuantity = (req: Request, res: Response) => {
   } else if (itemIndex.length === 2) {
     itemIndex = `0${itemIndex}`;
   }
-  console.log(itemIndex);
   const pokemonIndex = parseInt(req.params.pokemonindex);
   let status = 'fail';
   let found = false;
@@ -261,7 +304,6 @@ export const reduceItemQuantity = (req: Request, res: Response) => {
 };
 
 export const increaseItemQuantity = (req: Request, res: Response) => {
-  console.log(req.params);
   const id = parseInt(req.params.id);
   let itemIndex = req.params.itemindex;
   if (itemIndex.length === 1) {
@@ -355,4 +397,22 @@ export const postPlayerInfo = (req: Request, res: Response) => {
     cures: users[id].cures,
   };
   res.status(200).json(users[id]);
+};
+
+export const postPlayerPokemonIndex = (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  const pokemonIndex = parseFloat(req.params.pokemonindex);
+  pokemonIndexes[id] = pokemonIndex;
+  res.status(200).json({
+    status: 'success',
+  });
+};
+
+export const getPlayerPokemonIndex = (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  const reply = pokemonIndexes[id];
+  res.status(200).json({
+    status: 'success',
+    data: reply,
+  });
 };
