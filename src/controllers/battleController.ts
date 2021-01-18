@@ -7,6 +7,7 @@ let pokemonFainted: string[] = ['', ''];
 let faintedNotifications: boolean[] = [false, false];
 let usersIntroNotificationsLower: boolean[] = [false, false];
 let usersChoiceNotificationsLower: boolean[] = [false, false];
+let usersChoiceNotificationsLowerStatus: string[] = ['', ''];
 let completed = false;
 let serialNumber = 0;
 let newOpponentPokemon: string[] = ['', ''];
@@ -71,7 +72,9 @@ export const postChoiceNotificationUpper = (req: Request, res: Response) => {
 
 export const postChoiceNotificationLower = (req: Request, res: Response) => {
   const id = parseInt(req.params.id);
+  const data = req.params.data;
   usersChoiceNotificationsLower[id] = true;
+  usersChoiceNotificationsLowerStatus[id] = data;
   res.status(200).json({
     status: 'success',
     data: usersChoiceNotificationsLower,
@@ -176,11 +179,14 @@ export const getUserChoiceNotificationLower = async function (
     await new Promise((resolve) => setTimeout(resolve, 500));
     if (usersChoiceNotificationsLower[id]) {
       // Emit an SSE that contains the current 'count' as a string
-      console.log(`data: ${'OK LOWER CHOICE'} delayed\n\n`);
-      res.write(`data: ${'OK LOWER'}\n\n`);
+      console.log(
+        `data: ${usersChoiceNotificationsLowerStatus[id]} deayed\n\n`
+      );
+      res.write(`data: ${usersChoiceNotificationsLowerStatus[id]}\n\n`);
     }
   }
   usersChoiceNotificationsLower[id] = false;
+  usersChoiceNotificationsLowerStatus[id] = '';
 };
 
 export const postPokemonFainted = (req: Request, res: Response) => {
@@ -245,6 +251,25 @@ export const getNewOpponentPokemon = async function (
   }
   newOpponentPokemon[id] = '';
   newOpponentPokemonNotification[id] = false;
+};
+
+export const resetAll = (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  usersIntroNotifications = [false, false];
+  usersChoiceNotifications = [false, false];
+  usersChoices = ['', ''];
+  pokemonFainted = ['', ''];
+  faintedNotifications = [false, false];
+  usersIntroNotificationsLower = [false, false];
+  usersChoiceNotificationsLower = [false, false];
+  usersChoiceNotificationsLowerStatus = ['', ''];
+  completed = false;
+  serialNumber = 0;
+  newOpponentPokemon = ['', ''];
+  newOpponentPokemonNotification = [false, false];
+  res.status(200).json({
+    status: 'Emergency reset done',
+  });
 };
 
 function allChoiceNotifications() {

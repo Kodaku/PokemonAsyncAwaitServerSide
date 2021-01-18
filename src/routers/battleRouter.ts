@@ -14,6 +14,7 @@ import {
   postPokemonFainted,
   postUserIntroNotificationLower,
   postUserIntroNotificationUpper,
+  resetAll,
   resetChoices,
   resetIntro,
 } from '../controllers/battleController';
@@ -43,7 +44,7 @@ battleRouter
   .route('/battle/notify-choice-upper/:id/:data')
   .post(postChoiceNotificationUpper);
 battleRouter
-  .route('/battle/notify-choice-lower/:id')
+  .route('/battle/notify-choice-lower/:id/:data')
   .post(postChoiceNotificationLower);
 
 battleRouter
@@ -66,6 +67,10 @@ battleRouter.route('/battle/pokemon-fainted/:id').get(getPokemonFainted);
 battleRouter
   .route('/battle/notify-choice-fainted/:id/:data')
   .post(postNewOpponentPokemon);
-battleRouter.route('/battle/wait-choice-fainted/:id').get(getNewOpponentPokemon);
+battleRouter
+  .route('/battle/wait-choice-fainted/:id')
+  .get(getNewOpponentPokemon);
+
+battleRouter.route('/battle/emergency-reset/:id').post(resetAll);
 
 export { battleRouter };

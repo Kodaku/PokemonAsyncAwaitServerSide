@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import fs from 'fs';
-import { PokeBall } from '../src/database/pokeBallDB';
-import { Pokemon } from '../src/database/pokemonDB';
+import { Pokemon } from './database/pokemonDB';
+import { Move } from './database/movesDB';
 
 dotenv.config({ path: '../config.env' });
 
@@ -23,14 +23,12 @@ if (process.env.DATABASE_PASSWORD && process.env.DATABASE) {
     });
 
   //READ JSON FILE
-  const pokemons = JSON.parse(
-    fs.readFileSync(`${__dirname}/pokemon.json`, 'utf-8')
-  );
+  const pokemons = JSON.parse(fs.readFileSync(`../data/moves.json`, 'utf-8'));
 
   //IMPORT DATA INTO DB
   const importData = async () => {
     try {
-      await Pokemon.create(pokemons);
+      await Move.create(pokemons);
       console.log('Data successfully loaded');
       process.exit();
     } catch (err) {
@@ -41,7 +39,7 @@ if (process.env.DATABASE_PASSWORD && process.env.DATABASE) {
   //DELETE ALL DATA FROM DB
   const deleteData = async () => {
     try {
-      await Pokemon.deleteMany({});
+      await Move.deleteMany({});
       console.log('Data successfully deleted');
     } catch (err) {
       console.log(err);

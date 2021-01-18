@@ -1,0 +1,569 @@
+[
+    {
+        "index": "80",
+        "name": "Petal Dance",
+        "pp": "10",
+        "power": "120",
+        "type": "GRASS",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "412",
+        "name": "Energy Ball",
+        "pp": "10",
+        "power": "90",
+        "type": "GRASS",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "188",
+        "name": "Sludge Bomb",
+        "pp": "10",
+        "power": "90",
+        "type": "POISON",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "75",
+        "name": "Razor Leaf",
+        "pp": "25",
+        "power": "55",
+        "type": "GRASS",
+        "accuracy": "95",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "17",
+        "name": "Wing Attack",
+        "pp": "35",
+        "power": "60",
+        "type": "FLYING",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "53",
+        "name": "Flamethrower",
+        "pp": "15",
+        "power": "90",
+        "type": "FIRE",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "337",
+        "name": "Dragon Claw",
+        "pp": "15",
+        "power": "80",
+        "type": "DRAGON",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "424",
+        "name": "Fire Fang",
+        "pp": "15",
+        "power": "65",
+        "type": "FIRE",
+        "accuracy": "95",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "430",
+        "name": "Flash Cannon",
+        "pp": "10",
+        "power": "80",
+        "type": "STEEL",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "401",
+        "name": "Aqua Tail",
+        "pp": "10",
+        "power": "90",
+        "type": "WATER",
+        "accuracy": "90",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "57",
+        "name": "Surf",
+        "pp": "15",
+        "power": "90",
+        "type": "WATER",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "58",
+        "name": "Ice Beam",
+        "pp": "10",
+        "power": "90",
+        "type": "ICE",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "365",
+        "name": "Pluck",
+        "pp": "20",
+        "power": "60",
+        "type": "FLYING",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "63",
+        "name": "Hyper Beam",
+        "pp": "5",
+        "power": "150",
+        "type": "NORMAL",
+        "accuracy": "90",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "98",
+        "name": "Quick Attack",
+        "pp": "30",
+        "power": "40",
+        "type": "NORMAL",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "488",
+        "name": "Flame Charge",
+        "pp": "20",
+        "power": "50",
+        "type": "FIRE",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "473",
+        "name": "Psyshock",
+        "pp": "10",
+        "power": "80",
+        "type": "PSYCHIC",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "325",
+        "name": "Shadow Punch",
+        "pp": "20",
+        "power": "60",
+        "type": "GHOST",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "247",
+        "name": "Shadow Ball",
+        "pp": "15",
+        "power": "80",
+        "type": "GHOST",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "389",
+        "name": "Sucker Punch",
+        "pp": "5",
+        "power": "70",
+        "type": "DARK",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "474",
+        "name": "Venoshock",
+        "pp": "10",
+        "power": "65",
+        "type": "POISON",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "423",
+        "name": "Ice Fang",
+        "pp": "15",
+        "power": "65",
+        "type": "ICE",
+        "accuracy": "95",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "44",
+        "name": "Bite",
+        "pp": "25",
+        "power": "60",
+        "type": "DARK",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "89",
+        "name": "Earthquake",
+        "pp": "10",
+        "power": "100",
+        "type": "GROUND",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "62",
+        "name": "Aurora Beam",
+        "pp": "20",
+        "power": "65",
+        "type": "ICE",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "352",
+        "name": "Water Pulse",
+        "pp": "20",
+        "power": "60",
+        "type": "WATER",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "422",
+        "name": "Thunder Fang",
+        "pp": "15",
+        "power": "65",
+        "type": "ELECTRIC",
+        "accuracy": "95",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "435",
+        "name": "Discharge",
+        "pp": "15",
+        "power": "80",
+        "type": "ELECTRIC",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "85",
+        "name": "Thunder Bolt",
+        "pp": "15",
+        "power": "90",
+        "type": "ELECTRIC",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "521",
+        "name": "Volt Switch",
+        "pp": "20",
+        "power": "70",
+        "type": "ELECTRIC",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "436",
+        "name": "Lava Plume",
+        "pp": "15",
+        "power": "80",
+        "type": "FIRE",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "246",
+        "name": "Ancient Power",
+        "pp": "5",
+        "power": "60",
+        "type": "ROCK",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "332",
+        "name": "Aerial Ace",
+        "pp": "20",
+        "power": "60",
+        "type": "FLYING",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "59",
+        "name": "Blizzard",
+        "pp": "5",
+        "power": "110",
+        "type": "ICE",
+        "accuracy": "70",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "403",
+        "name": "Air Slash",
+        "pp": "15",
+        "power": "75",
+        "type": "FLYING",
+        "accuracy": "95",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "7",
+        "name": "Fire Punch",
+        "pp": "15",
+        "power": "75",
+        "type": "FIRE",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "407",
+        "name": "Dragon Rush",
+        "pp": "10",
+        "power": "100",
+        "type": "DRAGON",
+        "accuracy": "75",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "94",
+        "name": "Psychic",
+        "pp": "10",
+        "power": "90",
+        "type": "PSYCHIC",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "427",
+        "name": "Psycho Cut",
+        "pp": "20",
+        "power": "70",
+        "type": "PSYCHIC",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "345",
+        "name": "Magical Leaf",
+        "pp": "20",
+        "power": "60",
+        "type": "GRASS",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "517",
+        "name": "Inferno",
+        "pp": "5",
+        "power": "100",
+        "type": "FIRE",
+        "accuracy": "50",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "126",
+        "name": "Fire Blast",
+        "pp": "5",
+        "power": "110",
+        "type": "FIRE",
+        "accuracy": "85",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "76",
+        "name": "Solar Beam",
+        "pp": "10",
+        "power": "120",
+        "type": "GRASS",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "127",
+        "name": "Waterfall",
+        "pp": "15",
+        "power": "80",
+        "type": "WATER",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "326",
+        "name": "Sludge Bomb",
+        "pp": "20",
+        "power": "80",
+        "type": "PSYCHIC",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "440",
+        "name": "Cross Poison",
+        "pp": "20",
+        "power": "70",
+        "type": "POISON",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "404",
+        "name": "X-Scissor",
+        "pp": "15",
+        "power": "80",
+        "type": "BUG",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "305",
+        "name": "Poison Fang",
+        "pp": "15",
+        "power": "50",
+        "type": "POISON",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "87",
+        "name": "Thunder",
+        "pp": "10",
+        "power": "110",
+        "type": "ELECTRIC",
+        "accuracy": "70",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "408",
+        "name": "Power Gem",
+        "pp": "20",
+        "power": "80",
+        "type": "ROCK",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "60",
+        "name": "Psybeam",
+        "pp": "20",
+        "power": "65",
+        "type": "PSYCHIC",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "372",
+        "name": "Assurance",
+        "pp": "10",
+        "power": "60",
+        "type": "DARK",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "442",
+        "name": "Iron Head",
+        "pp": "15",
+        "power": "80",
+        "type": "STEEL",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "400",
+        "name": "Night Slash",
+        "pp": "15",
+        "power": "70",
+        "type": "DARK",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "280",
+        "name": "Brick Break",
+        "pp": "15",
+        "power": "75",
+        "type": "FIGHTING",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "224",
+        "name": "Megahorn",
+        "pp": "10",
+        "power": "120",
+        "type": "BUG",
+        "accuracy": "85",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "370",
+        "name": "Close Combat",
+        "pp": "5",
+        "power": "120",
+        "type": "FIGHTING",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "406",
+        "name": "Dragon Pulse",
+        "pp": "10",
+        "power": "85",
+        "type": "DRAGON",
+        "accuracy": "100",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "157",
+        "name": "Rock Slide",
+        "pp": "10",
+        "power": "75",
+        "type": "ROCK",
+        "accuracy": "90",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "242",
+        "name": "Crunch",
+        "pp": "15",
+        "power": "80",
+        "type": "DARK",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "177",
+        "name": "Aeroblast",
+        "pp": "5",
+        "power": "100",
+        "type": "FLYING",
+        "accuracy": "95",
+        "typology": "SPECIAL"
+    },
+    {
+        "index": "221",
+        "name": "Sacred Fire",
+        "pp": "5",
+        "power": "100",
+        "type": "FIRE",
+        "accuracy": "95",
+        "typology": "PHYSICAL"
+    },
+    {
+        "index": "348",
+        "name": "Leaf Blade",
+        "pp": "15",
+        "power": "90",
+        "type": "GRASS",
+        "accuracy": "100",
+        "typology": "PHYSICAL"
+    }
+]
