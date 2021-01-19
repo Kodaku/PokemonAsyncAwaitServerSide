@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.coupleRouter = void 0;
+var express_1 = require("express");
+var coupleController_1 = require("../controllers/coupleController");
+var coupleRouter = express_1.Router();
+exports.coupleRouter = coupleRouter;
+coupleRouter.route('/couples/create').get(coupleController_1.createCouples);
+coupleRouter.route('/couples/post/:id').post(coupleController_1.postUserOnCouple);
+coupleRouter.route('/couples/user/:id').get(coupleController_1.getCoupleUser);
+coupleRouter.route('/couples/user/known/:opponentid').get(coupleController_1.knowOpponent);
+coupleRouter.route('/couples/replys/post/:coupleid').post(coupleController_1.postCoupleReply);
+coupleRouter.route('/couples/replys/get/:coupleid').get(coupleController_1.getCoupleReplys);
+coupleRouter.route('/couples/all-replys/:coupleid').get(coupleController_1.getAllCoupleReplys);
+coupleRouter.route('/couples/reset-replys/:coupleid').get(coupleController_1.resetReplys);
