@@ -7,3 +7,4 @@ var random = Math.random();
 console.log(Math.floor(Math.random() * 4));
 var string = 'UNDEFINED';
 console.log(string);
+console.log(screen.width);
