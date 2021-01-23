@@ -396,15 +396,6 @@
         "typology": "PHYSICAL"
     },
     {
-        "index": "326",
-        "name": "Sludge Bomb",
-        "pp": "20",
-        "power": "80",
-        "type": "PSYCHIC",
-        "accuracy": "100",
-        "typology": "SPECIAL"
-    },
-    {
         "index": "440",
         "name": "Cross Poison",
         "pp": "20",
@@ -565,5 +556,14 @@
         "type": "GRASS",
         "accuracy": "100",
         "typology": "PHYSICAL"
+    },
+    {
+        "index": "326",
+        "name": "Extrasensory",
+        "pp": "20",
+        "power": "80",
+        "type": "PSYCHIC",
+        "accuracy": "100",
+        "typology": "SPECIAL"
     }
 ]

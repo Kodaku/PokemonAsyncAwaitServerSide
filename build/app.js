@@ -20,6 +20,7 @@ var screenRouter_1 = require("./routers/screenRouter");
 var upperLowerRouter_1 = require("./routers/upperLower/upperLowerRouter");
 var battleRouter_1 = require("./routers/battleRouter");
 var healthRouter_1 = require("./routers/healthRouter");
+var movesRouter_1 = require("./routers/movesRouter");
 dotenv_1.default.config({ path: './config.env' });
 var app = express_1.default();
 app.use(express_1.default.json());
@@ -57,7 +58,8 @@ function launchApp() {
     app.use(upperLowerRouter_1.upperLowerRouter);
     app.use(battleRouter_1.battleRouter);
     app.use(healthRouter_1.healthRouter);
-    app.listen(3000, function () {
+    app.use(movesRouter_1.movesRouter);
+    app.listen(3000, '192.168.1.199', function () {
         console.log('Server listening on port 3000');
     });
 }
