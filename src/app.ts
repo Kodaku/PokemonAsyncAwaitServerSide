@@ -14,6 +14,7 @@ import { screenRouter } from './routers/screenRouter';
 import { upperLowerRouter } from './routers/upperLower/upperLowerRouter';
 import { battleRouter } from './routers/battleRouter';
 import { healthRouter } from './routers/healthRouter';
+import { movesRouter } from './routers/movesRouter';
 
 dotenv.config({ path: './config.env' });
 
@@ -67,8 +68,9 @@ function launchApp() {
   app.use(upperLowerRouter);
   app.use(battleRouter);
   app.use(healthRouter);
+  app.use(movesRouter);
 
-  app.listen(3000, () => {
+  app.listen(3000, '192.168.1.199', () => {
     console.log('Server listening on port 3000');
   });
 }
