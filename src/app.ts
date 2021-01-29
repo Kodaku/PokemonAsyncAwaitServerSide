@@ -70,7 +70,7 @@ function launchApp() {
   app.use(healthRouter);
   app.use(movesRouter);
 
-  app.listen(3000, '192.168.1.199', () => {
+  app.listen(3000, () => {
     console.log('Server listening on port 3000');
   });
 }
