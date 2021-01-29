@@ -59,7 +59,7 @@ function launchApp() {
     app.use(battleRouter_1.battleRouter);
     app.use(healthRouter_1.healthRouter);
     app.use(movesRouter_1.movesRouter);
-    app.listen(3000, '192.168.1.199', function () {
+    app.listen(3000, function () {
         console.log('Server listening on port 3000');
     });
 }
